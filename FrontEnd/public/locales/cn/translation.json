@@ -1,0 +1,70 @@
+{
+  "section_title": "DocAppoint为您提供找到医生的最佳方式",
+  "section_description": "通过网站，您可以轻松搜索医生并管理您的所有预约。",
+  "schedule_appointment": "预约",
+  "service_quality_title": "为您提供高质量的服务",
+  "service_quality_description": "网站上有许多不同专业的医生。",
+  "book_our_doctors": "预约我们的医生",
+  "take_care_of_yourself": "请不要耽搁照顾自己和您的健康",
+  "Header": {
+    "Home": "首页",
+    "Find_Doctor": "找医生",
+    "About": "关于",
+    "Contact": "联系"
+  },
+  "Card": {
+    "Reserve": "预约",
+    "View_Profile": "查看个人资料"
+  },
+  "DatePicker": {
+    "Select_Date": "选择日期"
+  },
+  "ProfileRegister": {
+    "Login": "登录",
+    "Register": "注册"
+  },
+  "SearchDoctorCard": {
+    "Available": "有空",
+    "Not_Available": "无空",
+    "Book_Now": "立即预约",
+    "View_Profile": "查看个人资料"
+  },
+  "TimePicker": {
+    "Select_Time": "选择时间"
+  },
+  "Section_Doctor": {
+    "Welcome_Doctor": "欢迎",
+    "in_DocAppoint": "来到DocAppoint",
+    "Appointments_Today": "今天您有5个预约！"
+  },
+  "TableDashboard": {
+    "User_Signup": "用户注册",
+    "List_of_latest_users": "这是最新用户列表"
+  },"About":{
+    "aboutUsTitle": "关于我们",
+    "welcomeMessage": "欢迎来到DocAppoint，在线预约合格和有经验的医生变得更加简单和便捷。我们的使命是为所有人提供更简单、快速和高效的医疗服务。",
+    "dataPrivacyMessage": "我们承诺保护您的医疗数据隐私和个人信息安全。您的健康和福祉是我们的首要任务，我们努力为您提供优质和安全的用户体验。请随时浏览我们的网站，了解众多可用的医疗专业人员。掌握您的健康，立即预约您的下一个DocAppoint门诊！",
+    "bookingSystemMessage": "通过我们的在线预约系统，您可以查看医生的可用时间，选择最适合您的时间段，并通过几次点击即可预约您的门诊。不再需要长时间等待电话或不必要的移动，DocAppoint简化和加快了您的医疗预约管理。"
+  
+  },"contact":{
+    "contactUsTitle": "联系我们",
+    "nameLabel": "姓名：",
+    "namePlaceholder": "姓名",
+    "emailLabel": "邮箱：",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "您的留言：",
+    "messagePlaceholder": "您的留言",
+    "sendButton": "发送",
+    "phoneNumber": "+1 234-567-89",
+    "officePhoneNumber": "+1 234-567-89",
+    "emailAddress": "example@gmail.com",
+    "address": "某某街道，某某城市，某某国家，4006"
+  },  "view":{
+    "Title":"最新文章 "
+  
+  },"footer":{
+    "copyright":"版权所有 © 2023 DocAppoint，保留所有权利。"
+  }
+  
+  
+}

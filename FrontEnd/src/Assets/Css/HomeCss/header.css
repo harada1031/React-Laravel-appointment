@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.zoom:hover img {
+  transform: scale(1.1);
+}
+body {
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* START HEADER */
+
+.header {
+  background-color: #c1dff9;
+  height: 74px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Header_container {
+  display: flex;
+  align-items: center;
+}
+
+._container {
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo_nav {
+  width: 113%;
+}
+
+.logo_siz {
+  width: 115px;
+  margin-right: 107px;
+}
+
+.nav_items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 90%;
+  margin-top: 3px;
+}
+
+a.nav_link {
+  font-size: 13px;
+  text-decoration: none;
+  color: #8c8d96;
+  font-weight: 600;
+}
+
+.nav_item {
+  margin-right: 57px;
+}
+
+._btn {
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 6px 20px 4px 20px;
+}
+
+.btn_bg_primary {
+  background-color: #0d63f3;
+  color: white;
+}
+.btn_bg_white {
+  background-color: white;
+  color: #0d63f3;
+}
+
+.btn_bg_white:hover {
+  background-color: #f4f1f1;
+}
+.btn_bg_primary:hover {
+  background-color: #0b60ed;
+}
+
+.mr_left {
+  margin-left: 2%;
+}
+
+.btn_mrl {
+  margin-left: 10px;
+}
+.menu {
+  display: flex;
+}
+
+/* END HEADER */
+
+/* RESPONSIVE HEADER */
+
+.d_none {
+  display: none;
+}
+.btn_menu {
+  border: none;
+  background-color: transparent;
+  color: #00214a;
+}
+
+.btn_menu {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .btn_menu {
+    /* margin-left: 180%; */
+    display: block;
+  }
+  .logo_nav {
+    width: 31%;
+    height: 100%;
+  }
+  .logo_siz {
+    width: 100%;
+    margin-right: 0px;
+  }
+  ._container {
+    /* width:90%; */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    background-color: #c1dff9;
+    width: 100%;
+    top: 60px;
+    bottom: 0;
+    left: -100%;
+    right: 0;
+    border-top: 1px solid white;
+    transition: all 0.3s ease-in-out;
+    height: fit-content;
+    z-index: 10;
+  }
+  .nav_items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav_item {
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+  .mr_left {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 26px;
+    margin-bottom: 20px;
+  }
+  .shaw {
+    left: 0;
+  }
+  .menu_mobile {
+    width: 69%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
