@@ -37,15 +37,15 @@ const AuthGuard = ({ children }) => {
   }
 
   if (!Loading && AuthUserData.user) {
-    if (
-      AuthUserData.isAuthenticated &&
-      get("TOKEN_USER") &&
-      AuthUserData.user.email_verified_at === null
-    ) {
-      return <Navigate to={"/user/verifeyemail"} replace />;
-    } else {
+    // if (
+    //   AuthUserData.isAuthenticated &&
+    //   get("TOKEN_USER") &&
+    //   AuthUserData.user.email_verified_at === null
+    // ) {
+    //   return <Navigate to={"/user/verifeyemail"} replace />;
+    // } else {
       return children;
-    }
+    // }
   } else {
     return (
       <div className=" flex  justify-center items-center h-[100vh] ">

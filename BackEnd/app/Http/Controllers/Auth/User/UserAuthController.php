@@ -16,17 +16,19 @@ class UserAuthController extends Controller
   public function register(RegisterRequest $request)
   {
     $data = $request->validated();
-
     $user = User::create([
       'firstname' => $data['firstname'],
       'lastname' => $data['lastname'],
-      'cin' => $data['cin'],
+      // 'cin' => $data['cin'],
+      'gender' => $data['gender'],
+      'birthday' => $data['birthday'],
       'email' => $data['email'],
       'password' => bcrypt($data['password'])
     ]);
 
     $token = $user->createToken('mainUser')->plainTextToken;
-    $user->sendEmailVerificationNotification();
+    // $user->sendEmailVerificationNotification();
+    $user->save();
 
     $userData = User::find($user->id);
 

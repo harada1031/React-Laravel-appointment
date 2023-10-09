@@ -27,7 +27,9 @@ const Signup = () => {
   const [DataForm, setData] = useState({
     firstname: "",
     lastname: "",
-    cin: "",
+    // cin: "",
+    gender: "",
+    birthday: "",
     email: "",
     password: "",
     password_confirmation: "",
@@ -36,12 +38,15 @@ const Signup = () => {
   const [error, setError] = useState({
     firstname: "",
     lastname: "",
-    cin: "",
+    // cin: "",
+    gender: "",
+    birthday: "",
     email: "",
     password: "",
   });
 
   const HandleChangeData = (e) => {
+    console.log(e.target.value);
     const { name, value } = e.target;
     setData({ ...DataForm, [name]: value });
   };
@@ -150,7 +155,7 @@ const Signup = () => {
                   </div>
                 </div>
 
-                <div className="mb-[20px]">
+                {/* <div className="mb-[20px]">
                   <label
                     htmlFor="cin"
                     className="block mb-1 text-[12px]  font-medium text-gray-900 dark:text-white"
@@ -175,6 +180,56 @@ const Signup = () => {
                       {error.cin[0]}
                     </p>
                   )}
+                </div> */}
+
+                <div className="grid gap-6 mb-[20px] md:grid-cols-2">
+                  <div>
+                    <label htmlFor="gender" className="block mb-1 text-[12px]  font-medium text-gray-900 dark:text-white">Gender</label>
+                    <select id="gender" name="gender" onChange={HandleChangeData}
+                            className={
+                              error.lastname !== ""
+                                ? "bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-[12px] rounded-lg focus:ring-red-500 focus:border-red-500 block w-full  py-[4px] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                : "bg-gray-50 border border-gray-300 text-gray-900 text-[12px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  py-[4px] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            }>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="don't know">I don't know</option>
+                        <option value="genderless">Genderless</option>
+                        <option value="non-binary">Non binary</option>
+                        <option value="trans">trans</option>
+                        <option value="I'd rather not say">I'd rather not say</option>
+                    </select>
+                    {error.gender && (
+                      <p className="mt-2 text-[11px] text-red-600 dark:text-red-500">
+                        {error.gender[0]}
+                      </p>
+                    )}
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="birthday"
+                      className="block mb-1 text-[12px]  font-medium text-gray-900 dark:text-white"
+                    >
+                      Birthday
+                    </label>
+                    <input
+                      type="date"
+                      id="birthday"
+                      name="birthday"
+                      className={
+                        error.birthday !== ""
+                          ? "bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-[12px] rounded-lg focus:ring-red-500 focus:border-red-500 block w-full  py-[4px] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          : "bg-gray-50 border border-gray-300 text-gray-900 text-[12px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  py-[4px] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      }
+                      required
+                      onChange={HandleChangeData}
+                    />
+                    {error.birthday && (
+                      <p className="mt-2 text-[11px] text-red-600 dark:text-red-500">
+                        {error.birthday[0]}
+                      </p>
+                    )}
+                  </div>
                 </div>
 
                 <div className="mb-[20px]">

@@ -40,21 +40,21 @@ const AuthDoctorGuard = ({ children }) => {
   }
 
   if (!Loading && AuthDoctorData.doctor) {
-    if (
-      AuthDoctorData.isAuthenticated &&
-      get("TOKEN_DOCTOR") &&
-      AuthDoctorData.doctor.email_verified_at === null
-    ) {
-      return <Navigate to={"/doctor/verifyemail"} replace />;
-    } else if (
-      AuthDoctorData.isAuthenticated &&
-      get("TOKEN_DOCTOR") &&
-      AuthDoctorData.doctor.verified === 0
-    ) {
-      return <Navigate to={"/doctor/confirmation"} replace />;
-    } else {
+    // if (
+    //   AuthDoctorData.isAuthenticated &&
+    //   get("TOKEN_DOCTOR") &&
+    //   AuthDoctorData.doctor.email_verified_at === null
+    // ) {
+    //   return <Navigate to={"/doctor/verifyemail"} replace />;
+    // } else if (
+    //   AuthDoctorData.isAuthenticated &&
+    //   get("TOKEN_DOCTOR") &&
+    //   AuthDoctorData.doctor.verified === 0
+    // ) {
+    //   return <Navigate to={"/doctor/confirmation"} replace />;
+    // } else {
       return children;
-    }
+    // }
   } else {
     return (
       <div className=" flex  justify-center items-center h-[100vh] ">

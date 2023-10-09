@@ -14,6 +14,8 @@ import {
   storeInLocalStorage,
 } from "../../../Services/LocalStorageService";
 
+import { GoogleLogin } from "@react-oauth/google";
+
 const AuthAdmin = () => {
   document.title = "Admin Login";
 
@@ -130,7 +132,14 @@ const AuthAdmin = () => {
                 <div className=" mb-2"> 
                 </div>
                 <div className="flex justify-center items-center w-full ">
-                  <AuthButton Text={"Continue with Google"} Loading={loading} />
+                  <GoogleLogin size="medium" theme="filled_blue"
+                    onSuccess={credentialResponse => {
+                      console.log(credentialResponse);
+                    }}
+                    onError={() => {
+                      console.log('Login Failed');
+                    }}
+                  />
                 </div>
               </form>
             </div>

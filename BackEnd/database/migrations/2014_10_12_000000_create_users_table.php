@@ -15,7 +15,9 @@ return new class extends Migration
       $table->id();
       $table->string('firstname');
       $table->string('lastname');
-      $table->string('cin');
+      // $table->string('cin');
+      $table->string('gender'); //add
+      $table->date('birthday'); //add
       $table->string('email')->unique();
       $table->string('user_avatar')->nullable();
       $table->string('phoneNumber')->nullable();

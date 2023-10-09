@@ -14,7 +14,7 @@ class UsersManagementController extends Controller
     $validator = Validator::make($request->all(), [
       'firstname' => 'required',
       'lastname' => 'required',
-      'cin' => 'required',
+      // 'cin' => 'required',
       'email' => 'required|email',
       'id' => 'required|exists:users,id'
     ]);
@@ -36,7 +36,7 @@ class UsersManagementController extends Controller
 
     $user->firstname = $data['firstname'];
     $user->lastname = $data['lastname'];
-    $user->cin = $data['cin'];
+    // $user->cin = $data['cin'];
     $user->email = $data['email'];
 
     $user->save();

@@ -86,7 +86,8 @@
         <p class="tel">Tél: {{ $doctor->phoneNumber }}</p>
       </div>
       <div class="UserInfo">
-        Nom: {{ $user->firstname }} {{$user->lastname}} | CIN: {{ $user->cin }}
+        Nom: {{ $user->firstname }} {{$user->lastname}} 
+        <!-- | CIN: {{ $user->cin }} -->
       </div>
       <div class="textRen">
         Votre prochain rendez-vous :

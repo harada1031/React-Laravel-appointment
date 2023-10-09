@@ -1,0 +1,42 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-- current state of DB 10:9 ---
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
++ doctors
+	id
+	firstname
+	lastname
+	cin
+	phoneNumber
+	email
+	password
+	avatar_doctor
+	Matricule
+	about
+	verified
+	nom_cabinet
+	address_cabinet
+	day_debut_work
+	day_fin_work
+	time_debut_work
+	time_fin_work
+	appoinment_time
+	available
+	email_verified_at
+	created_at
+	updated_at
+
+
++ users											
+	id		
+	firstname
+	lastname
+	cin
+	email
+	user_avatar
+	phoneNumber
+	email_verified_at
+	password
+	remember_token
+	created_at
+	updated_at
+		?need?: birthday, gender
